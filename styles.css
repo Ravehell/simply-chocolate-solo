@@ -207,6 +207,7 @@ img {
 }
 /* ingredients section */
 .ingredients-section {
+  margin-bottom: 120px;
 }
 .ingridients-title {
   font-weight: 600;
@@ -260,4 +261,29 @@ img {
 .ingridients-item:nth-child(4n + 3) {
   background-color: rgba(30, 24, 35, 1);
   color: #ffffff;
+}
+/* Made section */
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.made-content {
+  padding: 32px;
+}
+.made-section {
+}
+.made-title {
+  color: rgba(17, 17, 17, 1);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 350px;
+  margin-bottom: 28px;
+}
+.made-list {
+  display: flex;
+  flex-direction: column;
+}
+.made-paragraph {
+  padding-bottom: 24px;
 }
