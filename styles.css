@@ -1,4 +1,5 @@
 body {
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -28,11 +29,28 @@ ol {
   margin: 0 auto;
   padding: 0 15px;
 }
-
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
 img {
   display: block;
   max-width: 100%;
 }
+/* visually-hidden */
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -50,9 +68,11 @@ img {
   color: #111111;
   margin-right: 4px;
   align-items: center;
+  flex-shrink: 0;
 }
 .icon-logo {
   margin-right: 188px;
+  flex-shrink: 0;
 }
 .header-container {
   display: flex;
@@ -62,6 +82,7 @@ img {
   display: flex;
   gap: 24px;
   margin-right: 137px;
+  flex-shrink: 0;
 }
 .header-link-item {
   display: block;
@@ -96,6 +117,7 @@ img {
   background-image: url(./images/chocolate-h1-title.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 72px;
 }
 .hero-title {
   color: #ffffff;
@@ -142,4 +164,36 @@ img {
 .btn-hero:focus {
   border-color: #fd9222;
   color: #fd9222;
+}
+/* Benefits section */
+.benefits-container {
+  background-color: #1e1823;
+  width: 1200px;
+  padding: 50px;
+}
+.benefits-list {
+  display: flex;
+  gap: 88px;
+}
+.benefits-items {
+  width: calc((100% - 88px * 2) / 3);
+}
+.benefits-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  padding-bottom: 18px;
+}
+.benefits-paragraph {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 100%;
+}
+.benefits-icons {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+.benefits-link {
+  padding: 15px;
 }
