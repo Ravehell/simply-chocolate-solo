@@ -33,10 +33,12 @@
               <a href="" class="header-link-item">Home</a>
             </li>
             <li class="header-list-item">
-              <a href="" class="header-link-item">How it's made?</a>
+              <a href="#How it's made?" class="header-link-item"
+                >How it's made?</a
+              >
             </li>
             <li class="header-list-item">
-              <a href="" class="header-link-item">Our products</a>
+              <a href="#Our products" class="header-link-item">Our products</a>
             </li>
             <li class="header-list-item">
               <a href="" class="header-link-item">Top sellers</a>
@@ -48,14 +50,26 @@
         </nav>
         <ul class="header-socials">
           <li>
-            <svg class="header-link" width="24" height="24">
-              <use href="./icon.svg#icon-instagram">Instagram</use>
-            </svg>
+            <a
+              class="header-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="header-link" width="24" height="24">
+                <use href="./icon.svg#icon-instagram">Instagram</use>
+              </svg>
+            </a>
           </li>
           <li>
-            <svg class="header-link" width="24" height="24">
-              <use href="./icon.svg#icon-twitter">Twitter</use>
-            </svg>
+            <a
+              class="header-social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="header-link" width="24" height="24">
+                <use href="./icon.svg#icon-twitter">Twitter</use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -76,11 +90,18 @@
               <button class="btn-hero" type="button">How it’s made</button>
             </li>
           </ul>
-          <a class="hero-link" href="">scroll down</a>
+          <a class="hero-link" href="#benefits"
+            >scroll down
+            <span class="hero-link-circle">
+              <svg class="hero-icon-arrow" width="22" height="22">
+                <use href="./icon.svg#icon-arrow">arrow</use>
+              </svg>
+            </span>
+          </a>
         </div>
       </section>
       <!-- Benefits section -->
-      <section class="benefits-container container">
+      <section class="benefits-container container" id="benefits">
         <h2 class="visually-hidden">Benefits</h2>
         <ul class="benefits-list">
           <li class="benefits-items">
@@ -171,7 +192,7 @@
         </ul>
       </section>
       <!-- Made section -->
-      <section class="made-section container">
+      <section class="made-section container" id="How it's made?">
         <h2 class="ingridients-title">
           hOW IT’S <span class="ingridients-span">made?</span>
         </h2>
@@ -204,6 +225,40 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <!-- Our products section -->
+      <section class="container" id="Our products">
+        <h2 class="ingridients-title">
+          Our <span class="ingridients-span">pRODUCTS</span>
+        </h2>
+        <div>
+          <ul class="our-products-list">
+            <li class="our-products-items">
+              <img src="./images/orange-chocolate.png" alt="orange chocolate" />
+              <h3 class="our-products-titles">orange</h3>
+              <p class="our-products-paragraph">Dark chocolate</p>
+              <h4 class="our-products-subtitle">45 UAH</h4>
+            </li>
+            <li class="our-products-items">
+              <img src="./images/red-chocolate.png" alt="red chocolate" />
+              <h3 class="our-products-titles">APPLE&CRANBERRY</h3>
+              <p class="our-products-paragraph">Milk chocolate</p>
+              <h4 class="our-products-subtitle">50 UAH</h4>
+            </li>
+            <li class="our-products-items">
+              <img src="./images/blue-chocolate.png" alt="yellow chocolate" />
+              <h3 class="our-products-titles">lime&sea salt</h3>
+              <p class="our-products-paragraph">Dark chocolate</p>
+              <h4 class="our-products-subtitle">66 UAH</h4>
+            </li>
+            <li class="our-products-items">
+              <img src="./images/yellow-chocolate.png" alt="yellow chocolate" />
+              <h3 class="our-products-titles">orange</h3>
+              <p class="our-products-paragraph">Dark chocolate</p>
+              <h4 class="our-products-subtitle">54 UAH</h4>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
