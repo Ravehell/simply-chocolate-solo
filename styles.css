@@ -16,7 +16,13 @@ h6,
 p {
   margin: 0;
 }
-
+button {
+  border: none;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
 ul,
 ol {
   margin-top: 0;
@@ -30,7 +36,6 @@ ol {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  outline: 2px solid red;
 }
 .section {
   padding-bottom: 60px;
@@ -425,7 +430,6 @@ img {
   text-align: center;
   padding-top: 72px;
   padding-bottom: 72px;
-  margin-bottom: 120px;
 }
 .explore-container {
   display: flex;
@@ -463,3 +467,109 @@ img {
   color: #fd9222;
 }
 /* footer section */
+/* .footer-section {
+  padding: 50px 0;
+  background-color: rgba(30, 24, 35, 1);
+}
+.footer-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  max-width: 300px;
+  margin-right: 543px;
+}
+.footer-span {
+  color: #fd9222;
+}
+.footer-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer-container {
+  display: flex;
+}
+.adress-list {
+  display: flex;
+}
+.footer-address-item a {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+} */
+.footer-section {
+  background-color: #1e1823;
+  padding: 50px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-title {
+  font-weight: 500;
+  max-width: 300px;
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.footer-span {
+  color: #fd9222;
+}
+
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subtitle {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+
+.footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-address-item a {
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer-socials {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.footer-social-link {
+  color: #ffffff;
+}
+.footer-icon {
+  color: #ffffff;
+}
+.footer-social-link {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 1);
+}
+.footer-social-link:hover {
+  stroke: #fd9222;
+}
