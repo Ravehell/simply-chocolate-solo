@@ -169,8 +169,7 @@ img {
   background-color: #fd9222;
   border: 1px solid transparent;
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
   background-color: #ffffff;
   color: #fd9222;
 }
@@ -182,8 +181,7 @@ img {
   border-radius: 100px;
   border: 1px solid #ffffff;
 }
-.btn-hero:hover,
-.btn-hero:focus {
+.btn-hero:hover {
   border-color: #fd9222;
   color: #fd9222;
 }
@@ -321,6 +319,9 @@ img {
   border-radius: 50%;
 }
 /* Our products */
+.our-products-section {
+  margin-bottom: 120px;
+}
 .our-products-titles {
   font-weight: 600;
   font-size: 18px;
@@ -340,6 +341,7 @@ img {
 .our-products-list {
   display: flex;
   gap: 18px;
+  flex-wrap: wrap;
   padding: 32px 20px;
   align-items: center;
   justify-content: center;
@@ -348,3 +350,116 @@ img {
   width: calc((100% - 18px * 3) / 4);
   text-align: center;
 }
+/* top sellers */
+.top-sellers-section {
+  margin-bottom: 120px;
+}
+.top-sellers-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.btn-top-sellers {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 100px;
+  background-color: #fd9222;
+  border: 1px solid transparent;
+}
+.btn-top-sellers:hover,
+.btn-top-sellers:focus {
+  background-color: #ffffff;
+  color: #fd9222;
+}
+/* chocolate is loved */
+.chocolate-section-list {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.chocolate-section-items {
+  width: calc((100% - 28px * 2) / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.chocolate-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.chocolate-paragraph {
+  color: rgba(17, 17, 17, 0.7);
+  max-width: 312px;
+  margin-bottom: 94px;
+}
+.btn-chocolate {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  color: rgba(17, 17, 17, 1);
+  background-color: transparent;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid rgba(253, 146, 34, 1);
+}
+.btn-chocolate:hover {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.chocolate-section {
+  margin-bottom: 120px;
+}
+/* explore section */
+.explore-section {
+  background-image: url(./images/explore-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-bottom: 120px;
+}
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore-title {
+  color: rgba(255, 255, 255, 1);
+  max-width: 378px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.explore-paragraph {
+  color: rgba(255, 255, 255, 1);
+  max-width: 467px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+.btn-explore {
+  font-weight: 600;
+  color: #ffffff;
+  padding: 14px 40px;
+  border-radius: 100px;
+  background-color: #fd9222;
+  border: 1px solid transparent;
+}
+.btn-explore:hover {
+  background-color: #ffffff;
+  color: #fd9222;
+}
+/* footer section */
