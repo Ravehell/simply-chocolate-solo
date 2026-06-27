@@ -404,14 +404,18 @@
         </div>
       </div>
     </footer>
-    <!-- Modal winwod -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- Modal window -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="28" height="28">
             <use href="./icon.svg#icon-x-close"></use>
           </svg>
         </button>
+        <strong class="form-title"
+          >LEAVE A REVIEW ABOUT
+          <span class="ingridients-span">OUR CHOCOLATE</span></strong
+        >
         <form class="modal-form" name="modal_form">
           <label class="form-modal-label" for="user_name">Name</label>
           <div class="modal-form-div">
@@ -445,7 +449,7 @@
               maxlength="12"
             />
           </div>
-          <label class="form-modal-label" for="user_message">Comment</label>
+          <label class="form-modal-label" for="user_message"></label>
           <div class="modal-form-div">
             <textarea
               class="modal-form-textarea"
@@ -455,6 +459,17 @@
               placeholder="Enter text"
             ></textarea>
           </div>
+          <label class="modal-form-agreement">
+            <input class="checkbox" type="checkbox" name="user_agreement" />
+            <span class="modal-dorm-desc"
+              >I accept the terms and conditions of the
+              <a class="modal-form-link" href="" target="_blank"
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+
+          <button class="modal-form-button btn" type="submit">Send</button>
         </form>
       </div>
     </div>
