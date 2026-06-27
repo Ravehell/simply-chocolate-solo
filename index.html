@@ -341,7 +341,9 @@
             </p>
           </li>
         </ul>
-        <button class="btn-chocolate" type="button">Leave a review</button>
+        <button class="btn-chocolate" type="button" data-modal-open>
+          Leave a review
+        </button>
       </section>
       <!-- Explore section -->
       <section class="explore-section container">
@@ -402,5 +404,61 @@
         </div>
       </div>
     </footer>
+    <!-- Modal winwod -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./icon.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <form class="modal-form" name="modal_form">
+          <label class="form-modal-label" for="user_name">Name</label>
+          <div class="modal-form-div">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              id="user_name"
+              required
+            />
+          </div>
+          <label class="form-modal-label" for="user_email">Email</label>
+          <div class="modal-form-div">
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user_email"
+              id="user_email"
+              placeholder="simplychoc@gmail.com"
+              required
+            />
+          </div>
+          <label class="form-modal-label" for="user_phone">Phone</label>
+          <div class="modal-form-div">
+            <input
+              class="modal-form-input"
+              type="phone"
+              name="user_phone"
+              id="user_phone"
+              minlength="12"
+              maxlength="12"
+            />
+          </div>
+          <label class="form-modal-label" for="user_message">Comment</label>
+          <div class="modal-form-div">
+            <textarea
+              class="modal-form-textarea"
+              name="user_message"
+              id="user_message"
+              rows="5"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
