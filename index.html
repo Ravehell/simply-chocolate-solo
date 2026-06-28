@@ -424,8 +424,17 @@
               type="text"
               name="user_name"
               id="user_name"
+              placeholder="Jackob Mercer"
               required
+              minlength="3"
             />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./icon.svg#icon-person"></use>
+            </svg>
+            <svg class="modal-form-info" width="24" height="24">
+              <use class="error" href="./icon.svg#icon-error"></use>
+              <use class="success" href="./icon.svg#icon-success"></use>
+            </svg>
           </div>
           <label class="form-modal-label" for="user_email">Email</label>
           <div class="modal-form-div">
@@ -437,6 +446,13 @@
               placeholder="simplychoc@gmail.com"
               required
             />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./icon.svg#icon-email"></use>
+            </svg>
+            <svg class="modal-form-info" width="24" height="24">
+              <use class="error" href="./icon.svg#icon-error"></use>
+              <use class="success" href="./icon.svg#icon-success"></use>
+            </svg>
           </div>
           <label class="form-modal-label" for="user_phone">Phone</label>
           <div class="modal-form-div">
@@ -447,7 +463,16 @@
               id="user_phone"
               minlength="12"
               maxlength="12"
+              placeholder=" "
+              required
             />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./icon.svg#icon-phone"></use>
+            </svg>
+            <svg class="modal-form-info" width="24" height="24">
+              <use class="error" href="./icon.svg#icon-error"></use>
+              <use class="success" href="./icon.svg#icon-success"></use>
+            </svg>
           </div>
           <label class="form-modal-label" for="user_message"></label>
           <div class="modal-form-div">
@@ -461,7 +486,7 @@
           </div>
           <label class="modal-form-agreement">
             <input class="checkbox" type="checkbox" name="user_agreement" />
-            <span class="modal-dorm-desc"
+            <span class="modal-form-desc"
               >I accept the terms and conditions of the
               <a class="modal-form-link" href="" target="_blank"
                 >Privacy Policy</a
