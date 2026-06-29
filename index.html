@@ -484,14 +484,43 @@
               placeholder="Enter text"
             ></textarea>
           </div>
+          <!-- Version 1 -->
           <label class="modal-form-agreement">
-            <input class="checkbox" type="checkbox" name="user_agreement" />
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="user_agreement"
+              value="yes"
+            />
+            <span class="custom-checkbox">
+              <svg class="custom-checkbox-icon" width="10" height="10">
+                <use href="./icon.svg#icon-checkmark"></use>
+              </svg>
+            </span>
             <span class="modal-form-desc"
               >I accept the terms and conditions of the
               <a class="modal-form-link" href="" target="_blank"
                 >Privacy Policy</a
               ></span
             >
+            <!-- Version 2 -->
+            <!-- <input class="checkbox" type="checkbox" name="user_agreement" />
+            <span class="custom-checkbox">
+              <svg
+                class="custom-checkbox-icon"
+                width="10"
+                height="10"
+                value="yes"
+              >
+                <use href="./icon.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            <span class="modal-form-desc"
+              >I accept the terms and conditions of the
+              <a class="modal-form-link" href="" target="_blank"
+                >Privacy Policy</a
+              ></span
+            > -->
           </label>
 
           <button class="modal-form-button btn" type="submit">Send</button>
