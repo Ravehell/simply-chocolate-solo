@@ -442,6 +442,11 @@ img {
 }
 .our-products-list {
 }
+@media only screen and (max-width: 767.98px) {
+  .our-products-items {
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 768px) {
   .our-products-list {
     display: flex;
@@ -450,12 +455,12 @@ img {
     padding: 32px 20px;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) {
   .our-products-items {
     width: calc((100% - 18px) / 2);
-    text-align: center;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -470,11 +475,23 @@ img {
   margin-bottom: 120px;
 }
 .top-sellers-list {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 32px;
 }
-
+@media only screen and (min-width: 1024px) {
+  .top-sellers-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+.top-sellers-item {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .top-sellers-item-1 {
+    display: none;
+  }
+}
 .btn-top-sellers {
   display: block;
   margin: 0 auto;
@@ -490,6 +507,7 @@ img {
   background-color: #ffffff;
   color: #fd9222;
 }
+
 /* chocolate is loved */
 .chocolate-section-list {
   display: flex;
