@@ -133,7 +133,7 @@ img {
     display: none;
   }
 }
-@media only screen and (max-width: 1023.98px) {
+@media only screen and (max-width: 1119px) {
   .header-list {
     display: none;
   }
@@ -511,15 +511,40 @@ img {
 /* chocolate is loved */
 .chocolate-section-list {
   display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .chocolate-section-items {
-  width: calc((100% - 28px * 2) / 3);
+  /* width: calc((100% - 28px * 2) / 3); */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.chocolate-section-items:nth-child(n + 2) {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .chocolate-section-list {
+    gap: 16px;
+  }
+
+  .chocolate-section-items {
+    display: flex;
+    width: calc((100% - 16px) / 2);
+  }
+
+  .chocolate-section-items:nth-child(2) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chocolate-section-items {
+    width: calc((100% - 28px * 2) / 3);
+  }
+
+  .chocolate-section-items:nth-child(3) {
+    display: flex;
+  }
 }
 .chocolate-title {
   font-weight: 600;
