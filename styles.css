@@ -113,9 +113,9 @@ img {
     margin-right: 138px;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .icon-logo {
-    margin-right: 508px;
+    margin-right: 188px;
   }
 }
 .header-container {
@@ -917,7 +917,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
 .mobile-menu-icon {
   stroke: #111111;
 }
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 767.98px) {
   .menu-toggle {
     display: none;
   }
